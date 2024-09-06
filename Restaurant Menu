@@ -1,0 +1,26 @@
+package implementataion;
+
+import java.util.ArrayList;
+
+public class Restaurent {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        ArrayList southMenu=new ArrayList();
+        southMenu.add("Biriyani");
+        southMenu.add("Dosa");
+        southMenu.add("Idly");
+        System.out.println(southMenu);
+      ArrayList northMenu=new ArrayList();
+        northMenu.add("Chole");
+        northMenu.add("Naan");
+        northMenu.add("Kofta");
+        System.out.println(northMenu);	
+      ArrayList menu=new ArrayList();
+        System.out.println();
+        menu.addAll(northMenu);
+        menu.addAll(southMenu);
+       northMenu.addAll(southMenu);
+       System.out.println(northMenu);
+}
+}
